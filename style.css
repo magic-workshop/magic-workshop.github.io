@@ -309,7 +309,7 @@ main {
 
 /* TBD */
 .tbd {
-    text-align: center;
+    text-align: left;
     padding: 2rem;
     color: var(--text-light);
 }

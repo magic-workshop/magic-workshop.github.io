@@ -424,3 +424,13 @@ table {
         margin: 0.25rem 0;
     }
 }
+
+.phonetic {
+    font-family: fixed;
+    font-size: 80%;
+}
+
+#reg-form {
+    width: 100%;
+    height: 600px;
+}

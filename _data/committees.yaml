@@ -1,0 +1,32 @@
+orgs:
+  - name: Marco Baldi
+    affiliation: Università Politecnica delle Marche, Ancona, Italy
+  - name: Andrea Basso
+    affiliation: IBM Research Europe, Zurich, Switzerland
+    web: 'https://andreabasso.com/'
+  - name: Giacomo Borin
+    affiliation: IBM Research Europe and University of Zurich, Switzerland
+    web: 'https://giacomoborin.github.io/'
+  - name: Luca De Feo
+    affiliation: IBM Research Europe, Zurich, Switzerland
+    web: 'https://defeo.lu'
+  - name: Paolo Santini
+    affiliation: Università Politecnica delle Marche, Ancona, Italy
+    web: 'https://dii.univpm.it/paolo-santini/'
+
+progs:
+  - name: Andrea Basso
+    affiliation: IBM Research Europe, Zurich, Switzerland
+    web: 'https://andreabasso.com/'
+  - name: Maria Cortes-Real Santos
+    affiliation: Lyon, Lyon, France
+    web: 'https://mariascrs.com'
+  - name: Doreen Riepel
+    affiliation: CISPA, Saarbrücken, Germany
+    web: 'https://doreenriepel.me/'
+  - name: Simona Samardjiska
+    affiliation: Radboud University, Nijmegen, The Netherlands
+    web: 'https://www.samardjiska.org/'
+  - name: Paolo Santini
+    affiliation: Università Politecnica delle Marche, Ancona, Italy
+    web: 'https://dii.univpm.it/paolo-santini/'

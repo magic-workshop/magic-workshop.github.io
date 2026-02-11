@@ -11,16 +11,12 @@
         <nav>
             <div class="logo">MaGIC 2026</div>
             <ul>
-              <li><a href="index.html"
-		     {% if page.name == "index.html" %} class="active" {% endif %}>Home</a></li>
-              <li><a href="venue.html"
-		     {% if page.name == "venue.html" %} class="active" {% endif %}>Venue</a></li>
-              <li><a href="registration.html"
-		     {% if page.name == "registration.html" %} class="active" {% endif %}>Registration</a></li>
-              <li><a href="program.html"
-		     {% if page.name == "program.html" %} class="active" {% endif %}>Program</a></li>
-              <li><a href="organizers.html"
-		     {% if page.name == "organizers.html" %} class="active" {% endif %}>Organizers</a></li>
+	      {% assign pp = site.pages | sort: "order" %}
+	      {% for p in pp %}
+	      <li><a href="{{ p.url }}"
+		     {% if p == page %} class="active" {% endif %}
+		     >{{ p.title }}</a></li>
+	      {% endfor %}
             </ul>
         </nav>
     </header>

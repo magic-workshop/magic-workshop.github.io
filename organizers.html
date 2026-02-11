@@ -1,57 +1,37 @@
 ---
 layout: default
-title: Organizers
+title: Committees
 order: 5
 ---
     <div class="page-header">
-        <h1>Organizers</h1>
+        <h1>Committees</h1>
     </div>
 
     <main>
         <section class="content-section">
+            <h2>Program Committee</h2>
+
+            <div class="organizer-list">
+	      {% for o in site.data.committees.progs %}
+                <div class="organizer">
+                    <h3><a href="{{ o.web }}" target="_blank">{{ o.name }}</a></h3>
+                    <p>{{ o.affiliation }}
+                </div>
+	      {% endfor %}
+	    </div>
+        </section>
+
+        <section class="content-section">
             <h2>Organizing Committee</h2>
 
             <div class="organizer-list">
+	      {% for o in site.data.committees.orgs %}
                 <div class="organizer">
-                    <h3>Marco Baldi</h3>
-                    <p>
-                    Università Politecnica delle Marche, Ancona, Italy
-                    </p>
-                    <!-- <p><a href="mailto:m.baldi@staff.univpm.it">m.baldi@staff.univpm.it</a></p> -->
+                    <h3>{{ o.name }}</h3>
+                    <p>{{ o.affiliation }}
                 </div>
-
-                <div class="organizer">
-                    <h3>Andrea Basso</h3>
-                    <p>
-                    IBM Research Europe, Zurich, Switzerland
-                    </p>
-                    <!-- <p><a href="mailto:andrea.basso@ibm.com">andrea.basso@ibm.com</a></p> -->
-                </div>
-
-                <div class="organizer">
-                    <h3>Giacomo Borin</h3>
-                    <p>
-                    IBM Research Europe and University of Zurich, Switzerland 
-                    </p>
-                    <!-- <p><a href="mailto:magic@gbor.in">magic@gbor.in</a></p> -->
-                </div>
-
-                <div class="organizer">
-                    <h3>Luca De Feo</h3>
-                    <p>
-                    IBM Research Europe, Zurich, Switzerland
-                    </p>
-                    <!-- <p><a href="mailto:feo@zurich.ibm.com">feo@zurich.ibm.com</a></p> -->
-                </div>
-
-                <div class="organizer">
-                    <h3>Paolo Santini</h3>
-                    <p>
-                    Università Politecnica delle Marche, Ancona, Italy
-                    </p>
-                    <!-- <p><a href="mailto:p.santini@univpm.it">p.santini@univpm.it</a></p> -->
-                </div>
-            </div>
+	      {% endfor %}
+	    </div>
         </section>
 
         <section class="content-section">

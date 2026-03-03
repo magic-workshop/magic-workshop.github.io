@@ -9,7 +9,23 @@ order: 4
 
     <main>
         <section class="content-section">
-            <h2>Workshop Program</h2>
+          <h2>Invited speakers</h2>
+
+	  <div class="invited">
+	    {% for s in site.data.speakers.invited %}
+            <div class="speaker">
+	      <h3><a href="{{ s.website }}"
+		     target="_blank">{{ s.name }}</a></h3>
+	      <h4>{{ s.affiliation }}</h4>
+	      <figure><img src="{{ s.image }}" alt=""></figure>
+	      <p>{{ s.title }}</p>
+	    </div>
+	    {% endfor %}
+	  </div>
+	</section>
+
+	<section class="content-section">
+            <h2>Schedule</h2>
 
             <p class="tbd">
                 The program is currently being finalized. <br><br>

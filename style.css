@@ -343,6 +343,54 @@ main {
     /* font-size: 0.85rem; */
 }
 
+/* Speakers */
+.invited {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.invited .speaker {
+    background: var(--bg);
+    padding: 1rem;
+}
+
+.invited .speaker {
+    text-align: center;
+}
+
+.invited .speaker h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem 0;
+}
+
+.invited .speaker h4 {
+    font-size: 0.9rem;
+}
+
+.invited .speaker p {
+    margin: 0;
+    font-style: italic;
+}
+
+.invited .speaker figure {
+    background: url('assets/q.webp');
+    background-size: cover;
+    width: 120px;
+    height: 150px;
+    margin: 1ex auto;
+    border: solid thin var(--text);
+    overflow: hidden;
+}
+
+.invited .speaker img {
+    background-color: var(--bg);
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /* Sponsors */
 .supporters {
     display: flex;

@@ -376,6 +376,8 @@ main {
 }
 
 .invited .speaker figure {
+    display: flex;
+    justify-content: center;
     background: url('assets/q.webp');
     background-size: cover;
     width: 120px;
@@ -386,9 +388,7 @@ main {
 }
 
 .invited .speaker img {
-    background-color: var(--bg);
-    max-width: 100%;
-    max-height: 100%;
+    flex: 1 1 100%;
 }
 
 /* Sponsors */

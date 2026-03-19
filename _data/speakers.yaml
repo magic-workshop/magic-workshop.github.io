@@ -12,7 +12,7 @@ invited:
   - name: Yi-Fu Lai
     affiliation: Shanghai Jiao Tong University, China
     website: 'https://sites.google.com/view/yifulai'
-    image: assets/yifu.jpg
+    image: assets/yifu.png
     title: 'Wombat: Post-Quantum Blind Signature from Standard Group Action Assumptions and More'
   - name: Lorenz Panny
     affiliation: Technical University of Munich, Germany

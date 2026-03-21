@@ -288,10 +288,6 @@ main {
     margin-bottom: 0.25rem;
 }
 
-.status-closed strong {
-    display: block;
-}
-
 /* Status boxes */
 .status-closed {
     margin: 1rem 0 1.5rem;

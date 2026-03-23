@@ -3,17 +3,17 @@ invited:
     affiliation: COSIC, KU Leuven, Belgium
     website: 'https://www.krijnreijnders.com/'
     image: assets/krjin.jpeg
-    title: From Curves To Codes<br>(and back again)
-    title_abstract: From Curves To Codes (and back again)
-    abstract: In this talk, we’ll explore constructions of cryptographic group actions, with a particular focus on code equivalence. We define cryptographic group actions and code equivalence on a high-level, and analyse some of the (advanced) protocols built using code equivalence as a building block. We then take inspiration from isogeny-based cryptography, by comparing existing constructions from both fields. Their intersection leads to interesting questions on the potential of non-commutative cryptographic group actions.
+    title: 'From Curves To Codes<br>(and back again)'
+    title_abstract: 'From Curves To Codes (and back again)'
+    abstract: "In this talk, we’ll explore constructions of cryptographic group actions, with a particular focus on code equivalence. We define cryptographic group actions and code equivalence on a high-level, and analyse some of the (advanced) protocols built using code equivalence as a building block. We then take inspiration from isogeny-based cryptography, by comparing existing constructions from both fields. Their intersection leads to interesting questions on the potential of non-commutative cryptographic group actions."
     
   - name: Violetta Weger
     affiliation: Technical University of Munich, Germany
     website: 'https://home.cit.tum.de/~wvi/'
     image: assets/violetta.jpg
-    title: How hard is code equivalence really?
-    title_abstract: How hard is code equivalence really?
-    abstract: Many isomorphism problems can be naturally formulated as group actions, yet their computational complexity has been puzzling mathematicians for decades. The graph isomorphism problem is the most prominent example, it was given its own complexity class and was long believed to be hard until the breakthrough result of Babai showed that it can be solved in quasi-polynomial time.  In this talk, we turn to a closely related problem: code equivalence. Given two linear codes, can we recover the hidden monomial transformation mapping one to the other? Despite its simple formulation, the true complexity of this problem remains wide open. Beyond its theoretical interest, code equivalence has recently gained attention through its role in post-quantum cryptography, where it underlies the security of the signature scheme LESS.  In this talk, we survey its different variants, discuss connections to graph isomorphism and other related problems, and present an overview of known solvers and their cost, together with several directions that might finally determine how hard code equivalence really is.
+    title: 'How hard is code equivalence really?'
+    title_abstract: 'How hard is code equivalence really?'
+    abstract: "Many isomorphism problems can be naturally formulated as group actions, yet their computational complexity has been puzzling mathematicians for decades. The graph isomorphism problem is the most prominent example, it was given its own complexity class and was long believed to be hard until the breakthrough result of Babai showed that it can be solved in quasi-polynomial time.  In this talk, we turn to a closely related problem: code equivalence. Given two linear codes, can we recover the hidden monomial transformation mapping one to the other? Despite its simple formulation, the true complexity of this problem remains wide open. Beyond its theoretical interest, code equivalence has recently gained attention through its role in post-quantum cryptography, where it underlies the security of the signature scheme LESS.  In this talk, we survey its different variants, discuss connections to graph isomorphism and other related problems, and present an overview of known solvers and their cost, together with several directions that might finally determine how hard code equivalence really is."
     
   - name: Yi-Fu Lai
     affiliation: Shanghai Jiao Tong University, China
@@ -29,4 +29,4 @@ invited:
     image: assets/lorenz.jpg
     title: Commutative group actions from isogenies
     title_abstract: Commutative group actions from isogenies
-    abstract: In this introductory presentation I will summarize the concepts underlying isogeny-based commutative group actions, such as CSIDH and its more recent cousins (qt-)PEGASIS, with a non-isogeny-expert audience in mind. If time permits, I will also sketch some of the roadblocks surrounding Kuperberg's algorithm that render a precise and reliable quantum security analysis for those schemes relatively difficult (in comparison to other constructions).
+    abstract: "In this introductory presentation I will summarize the concepts underlying isogeny-based commutative group actions, such as CSIDH and its more recent cousins (qt-)PEGASIS, with a non-isogeny-expert audience in mind. If time permits, I will also sketch some of the roadblocks surrounding Kuperberg's algorithm that render a precise and reliable quantum security analysis for those schemes relatively difficult (in comparison to other constructions)."

@@ -22,6 +22,12 @@ order: 4
 	    </div>
 	    {% endfor %}
 	  </div>
+      </div>
+ 	    {% for s in site.data.speakers.invited %}
+		<p>{{ s.title }}</p><br>
+		<p>{{ s.abstract }}</p><br>
+	  </div>
+
 	</section>
 
 	<section class="content-section">

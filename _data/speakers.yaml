@@ -4,22 +4,29 @@ invited:
     website: 'https://www.krijnreijnders.com/'
     image: assets/krjin.jpeg
     title: From Curves To Codes<br>(and back again)
-    abstract: bla bla bla
+    title_abstract: From Curves To Codes (and back again)
+    abstract: In this talk, we’ll explore constructions of cryptographic group actions, with a particular focus on code equivalence. We define cryptographic group actions and code equivalence on a high-level, and analyse some of the (advanced) protocols built using code equivalence as a building block. We then take inspiration from isogeny-based cryptography, by comparing existing constructions from both fields. Their intersection leads to interesting questions on the potential of non-commutative cryptographic group actions.
     
   - name: Violetta Weger
     affiliation: Technical University of Munich, Germany
     website: 'https://home.cit.tum.de/~wvi/'
     image: assets/violetta.jpg
     title: How hard is code equivalence really?
+    title_abstract: How hard is code equivalence really?
+    abstract: In this talk, we’ll explore constructions of cryptographic group actions, with a particular focus on code equivalence. We define cryptographic group actions and code equivalence on a high-level, and analyse some of the (advanced) protocols built using code equivalence as a building block. We then take inspiration from isogeny-based cryptography, by comparing existing constructions from both fields. Their intersection leads to interesting questions on the potential of non-commutative cryptographic group actions.
     
   - name: Yi-Fu Lai
     affiliation: Shanghai Jiao Tong University, China
     website: 'https://sites.google.com/view/yifulai'
     image: assets/yifu.jpg
     title: 'Wombat: Post-Quantum Blind Signature from Standard Group Action Assumptions and More'
-    
+    title_abstract: 'Wombat: Post-Quantum Blind Signature from Standard Group Action Assumptions and More'
+    abstract: bla
+        
   - name: Lorenz Panny
     affiliation: Technical University of Munich, Germany
     website: 'https://yx7.cc/'
     image: assets/lorenz.jpg
     title: Group actions from isogenies
+    title_abstract: Group actions from isogenies
+    abstract: bla bla bla

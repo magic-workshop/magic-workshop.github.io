@@ -21,8 +21,8 @@ invited:
     image: assets/yifu.jpg
     title: 'Wombat: Post-Quantum Blind Signature from Standard Group Action Assumptions and More'
     title_abstract: 'Wombat: Post-Quantum Blind Signature from Standard Group Action Assumptions and More'
-    abstract: TBA
-        
+    abstract: "A recent work at Asiacrypt 2025 introduced a family of blind signature frameworks, collectively called Tanukis, built on non-commutative cryptographic group actions. These frameworks develop new techniques and achieve concurrent security for blind signatures. Straightforward instantiations yield compact schemes in two paradigms: an isogeny-based instantiation, based on CSI-FiSh group action, with signatures of about 4.5 KB, and a code-based instantiation, based on LESS and the code equivalence group action, with signatures around 64 KB. These are the first efficient blind signature constructions in the isogeny-based and code-based literature that support concurrent executions.\n\nDespite this advance, the Tanuki frameworks rely on a non-standard and interactive assumption, namely the so-called ``one more'' vectorization assumption. Given several structural attacks and vulnerabilities discovered in various group action instantiations, relying on non-standard assumptions can raise concerns.\n\nIn this work we present a new framework that achieves concurrent security while achieving better performance, and relying only on the standard group action hardness assumption, the vectorization problem (also known as the group action inversion problem). For the LESS instantiation, we apply dedicated code-based techniques to reduce signature sizes by a factor of 14.5. These improvements come with rigorous reductions to the standard problem, do not weaken the security claims, and are directly applicable to the LESS instantiations of Tanuki. As a result, our isogeny-based and code-based instantiations yield signature sizes of 8.89 and 8.84 KB, respectively, and retain concurrent security under the standard group-action inversion assumption."        
+  
   - name: Lorenz Panny
     affiliation: Technical University of Munich, Germany
     website: 'https://yx7.cc/'

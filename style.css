@@ -167,6 +167,13 @@ main {
     padding: 1.5rem;
 }
 
+.excursion {
+    background: var(--orange-bg);
+    border-left: 4px solid var(--orange);
+    padding: 1.5rem 2rem;
+}
+
+
 .highlight-card h3 {
     font-size: 0.75rem;
     font-weight: 500;

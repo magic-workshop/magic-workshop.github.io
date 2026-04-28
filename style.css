@@ -442,6 +442,26 @@ main {
     background: var(--bg);
 }
 
+.schedule td.event-working,
+.schedule-pill.event-working {
+    background: #eef7e8;
+    border-left: 4px solid #6ca65f;
+}
+
+.schedule td.event-excursion {
+    background: #edf6f8;
+    border-left: 4px solid #5d9aa8;
+}
+
+.schedule td.event-travel {
+    background: #f3f0f7;
+    border-left: 4px solid #8c73a8;
+}
+
+.schedule-pill {
+    padding: 0.35rem 0.45rem;
+}
+
 .content-section .schedule p {
     color: var(--text);
     margin-bottom: 0.65rem;

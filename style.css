@@ -394,6 +394,63 @@ main {
     flex: 1 1 100%;
 }
 
+/* Schedule */
+.schedule-wrap {
+    overflow-x: auto;
+    margin: 1rem 0 1.5rem;
+}
+
+.schedule {
+    width: 100%;
+    min-width: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 0.76rem;
+    line-height: 1.35;
+}
+
+.schedule th,
+.schedule td {
+    border: 1px solid var(--border);
+    padding: 0.65rem;
+    vertical-align: top;
+}
+
+.schedule thead th {
+    background: var(--orange);
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+}
+
+.schedule tbody th {
+    width: 5.6rem;
+    background: var(--orange-bg);
+    color: var(--text);
+    font-weight: 500;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.schedule td {
+    background: var(--surface);
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+
+.schedule td:empty {
+    background: var(--bg);
+}
+
+.content-section .schedule p {
+    color: var(--text);
+    margin-bottom: 0.65rem;
+}
+
+.content-section .schedule p:last-child {
+    margin-bottom: 0;
+}
+
 /* Sponsors */
 .supporters {
     display: flex;

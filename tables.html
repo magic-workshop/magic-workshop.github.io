@@ -1,0 +1,28 @@
+---
+layout: default
+title: Tables
+order: 5
+---
+    <div class="page-header">
+        <h1>Table plan</h1>
+    </div>
+
+    <main class="organizer-list">
+    </main>
+
+<script defer>
+  let perm = [ "Sebastiano Boscardin", "Arthur Herlédan Le Merdy", "Michael Meyer", "Vitse Vanessa", "Annamaria Iezzi", "Leonardo Errati", "Li Quan", "Robi Pedersen", "Federica Zanetti", "Edoardo Persichetti", "Giuseppe D'Alconzo", "Marius A. Aardal", "Yi-Fu Lai", "Andrea Flamini", "Sina Schaeffler", "Pierrick Dartois", "Rahmi El Mechri", "Antoine de Tarlé", "David Kohel", "Doreen Riepel", "Sara Montanari", "Wissam Ghantous", "Jonah Herr", "Alvaro Otero Sanchez", "Dania Lazzarini", "Leon Weingarten", "Letizia D'Achille", "Marc Houben", "Guido Maria Lido", "Simona Samardjiska", "Ryan Rueger", "Gioella Lorenzon", "Abel Laval", "Benjamin Wesolowski", "Krzysztof Pudowski", "Ariel Gabizon", "Vishnupriya Anupindi", "Gandon Martin", "Ignacio Fernández Rúa", "Violetta Weger", "Floyd Zweydinger", "Giuseppe Lamorgese", "Samuel Orr", "Filip Richter", "Michele Battagliola", "Laura Mattiuz", "Riccardo Schiavoni", "Harun Kır", "Paolo Santini", "Luca De Feo", "Etienne Piasecki", "Giacomo Borin", "Marco Baldi", "Monika Trimoska", "Andrea Basso", "Lorenz Panny", "Maria Corte-Real Santos", "Paola de Perthuis", "Krijn Reijnders" ];
+  console.log(perm.length);
+  
+  let main = document.querySelector('main');
+  for (let t = 0 ; t < 6 ; t++) {
+      let sec = main.appendChild(document.createElement('section'));
+      sec.className = `content-section table-plan`;
+      sec.innerHTML += `<h3>Table ${t+1}</h3>`;
+      let ul = sec.appendChild(document.createElement('ul'));
+      perm.slice(t*10, (t+1)*10).forEach(p => {
+	  ul.innerHTML += `<li>${p}</li>`;
+      });
+  }
+</script>
+

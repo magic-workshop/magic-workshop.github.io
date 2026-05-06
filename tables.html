@@ -12,17 +12,43 @@ order: 5
 
 <script defer>
   let perm = [ "Sebastiano Boscardin", "Arthur Herlédan Le Merdy", "Michael Meyer", "Vitse Vanessa", "Annamaria Iezzi", "Leonardo Errati", "Li Quan", "Robi Pedersen", "Federica Zanetti", "Edoardo Persichetti", "Giuseppe D'Alconzo", "Marius A. Aardal", "Yi-Fu Lai", "Andrea Flamini", "Sina Schaeffler", "Pierrick Dartois", "Rahmi El Mechri", "Antoine de Tarlé", "David Kohel", "Doreen Riepel", "Sara Montanari", "Wissam Ghantous", "Jonah Herr", "Alvaro Otero Sanchez", "Dania Lazzarini", "Leon Weingarten", "Letizia D'Achille", "Marc Houben", "Guido Maria Lido", "Simona Samardjiska", "Ryan Rueger", "Gioella Lorenzon", "Abel Laval", "Benjamin Wesolowski", "Krzysztof Pudowski", "Ariel Gabizon", "Vishnupriya Anupindi", "Gandon Martin", "Ignacio Fernández Rúa", "Violetta Weger", "Floyd Zweydinger", "Giuseppe Lamorgese", "Samuel Orr", "Filip Richter", "Michele Battagliola", "Laura Mattiuz", "Riccardo Schiavoni", "Harun Kır", "Paolo Santini", "Luca De Feo", "Etienne Piasecki", "Giacomo Borin", "Marco Baldi", "Monika Trimoska", "Andrea Basso", "Lorenz Panny", "Maria Corte-Real Santos", "Paola de Perthuis", "Krijn Reijnders" ];
-  console.log(perm.length);
+
+  // Just a random permutation, not very smart
+  let pi = [52, 29, 15, 7, 3, 21, 0, 9, 28, 33, 17, 31, 54, 26, 34, 58, 20, 5, 11, 55, 45, 27, 13, 49, 57, 10, 39, 40, 42, 36, 4, 37, 14, 50, 47, 23, 12, 24, 48, 2, 22, 16, 35, 38, 46, 53, 41, 19, 25, 51, 44, 30, 18, 56, 8, 6, 32, 1, 43];
+  
+  function shuffle(perm, pi, n) {
+      if (n == 0)
+	  return perm;
+      let newp = Array(perm.length);
+      for (let i = 0; i < perm.length; i++) {
+	  newp[pi[i]] = perm[i];
+      }
+      return shuffle(newp, pi, n-1);
+  }
+
+  let n = parseInt(window.location.search[1]);
+  if (isNaN(n)) {
+      let d = new Date();
+      n = 2*d.getUTCDay() + (d.getUTCHours() > 12);
+  }
+  n = n % 6;
+
+  let day = ['Wednesday', 'Thursday', 'Friday'][parseInt(n / 2)];
+  let meal = ['lunch', 'dinner'][n % 2];
+  document.querySelector('h1').textContent += `: ${day}'s ${meal}`;
+
+  perm = shuffle(perm, pi, n);
+  
+  let tables = Array(6).fill(0).map((_, t) => perm.slice(t*10, (t+1)*10));
   
   let main = document.querySelector('main');
-  for (let t = 0 ; t < 6 ; t++) {
+  tables.forEach((t, i) => {
       let sec = main.appendChild(document.createElement('section'));
       sec.className = `content-section table-plan`;
-      sec.innerHTML += `<h3>Table ${t+1}</h3>`;
+      sec.innerHTML += `<h3>Table ${i+1}</h3>`;
       let ul = sec.appendChild(document.createElement('ul'));
-      perm.slice(t*10, (t+1)*10).forEach(p => {
+      t.forEach(p => {
 	  ul.innerHTML += `<li>${p}</li>`;
       });
-  }
+  });
 </script>
-

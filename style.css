@@ -583,10 +583,16 @@ table {
 }
 
 /* Tables */
-.table-plan ul {
+#table-plan {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#table-plan ul {
     margin-left: 0;
 }
 
-.table-plan li {
+#table-plan li {
     list-style-type: none;
 }

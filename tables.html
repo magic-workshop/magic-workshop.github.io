@@ -4,7 +4,10 @@ title: Tables
 order: 5
 ---
     <div class="page-header">
-        <h1>Table plan: <em id="day"></em></h1>
+        
+      <h1 id="table">Table plan:
+	<a id="prev">〈</a><span id="day"></span><a id="next">〉</a>
+      </h1>
     </div>
 
     <main id="table-plan">
@@ -46,9 +49,10 @@ order: 5
 	  });
       });
   }
-
+  
+  let n;
   function doPlan() {
-      let n = parseInt(window.location.hash[1]);
+      n = parseInt(window.location.hash[1]);
       if (isNaN(n)) {
 	  let d = new Date();
 	  n = 2*d.getUTCDay() + (d.getUTCHours() > 12);
@@ -56,6 +60,15 @@ order: 5
       makePlan(perm, n % 6);
   }
 
+  function incrPlan(incr) {
+      console.log(incr);
+      n = (n + incr % 6 + 6) % 6;
+      window.location.hash = `#${n}`;
+  }
+  
   addEventListener("hashchange", doPlan);
   doPlan();
+
+  document.querySelector('#prev').onclick = () => incrPlan(-1);
+  document.querySelector('#next').onclick = () => incrPlan(1);
 </script>

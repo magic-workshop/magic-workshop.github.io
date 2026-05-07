@@ -596,3 +596,16 @@ table {
 #table-plan li {
     list-style-type: none;
 }
+
+#table span {
+    text-align: center;
+    display: inline-block;
+    width: 10em;
+}
+#table a {
+    cursor: pointer;
+    color: rgba(255,255,255,0.85);
+}
+#table a:hover {
+    color: #fff;
+}
